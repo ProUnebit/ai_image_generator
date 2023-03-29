@@ -22,7 +22,8 @@ app.use(express.static(path.join(__dirname, './')));
 app.use('/openai', require('./routes/openaiRoutes'));
 
 app.get("/", (req, res) => {
-    res.send("Express on Vercel");
+    // res.send("Express on Vercel");
+    res.sendFile('index.html');
 })
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
