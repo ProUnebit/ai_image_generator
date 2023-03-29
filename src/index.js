@@ -1,13 +1,9 @@
-// import './index.html';
-// import './index.scss';
-
 // import { mult, sum } from './modules/calc.js';
 
 // console.log(sum(3, 4));
 // console.log(mult(3, 4));
 
 //////////////////////////////////////
-
 
 const path = require('path');
 const express = require('express');
@@ -21,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'src')));
+app.use(express.static(path.join(__dirname, './')));
 
 app.use('/openai', require('./routes/openaiRoutes'));
 
