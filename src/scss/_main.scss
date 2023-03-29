@@ -1,0 +1,21 @@
+body {
+    background-color: pink;
+
+    h1 {
+        font-size: 40px;
+        font-family: 'ProximaNovaWebBold', sans-serif;
+        color: $title-color;
+    }
+
+    main {
+        display: grid;
+        user-select: none;
+    }
+
+    .image {
+        width: 300px;
+        height: 500px;
+        background-size: cover;
+        background-image: url('img/image2.jpg');
+    }
+}
