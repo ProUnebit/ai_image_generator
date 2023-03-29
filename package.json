@@ -10,7 +10,10 @@
     "start-node": "node src/index",
     "dev": "nodemon src/index"
   },
-  "keywords": [],
+  "keywords": [
+    "ia_image_generator",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
