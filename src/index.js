@@ -7,6 +7,7 @@
 
 const path = require('path');
 const express = require('express');
+const fs = require('fs');
 const dotenv = require('dotenv').config();
 const port = process.env.PORT || 5000;
 
@@ -21,9 +22,11 @@ app.use(express.static(path.join(__dirname, './')));
 
 app.use('/openai', require('./routes/openaiRoutes'));
 
-app.get("/", (req, res) => {
-    // res.send("Express on Vercel");
-    res.sendFile('index.html');
-})
+fs.readFile('./index.html');
+
+// app.get("/", (req, res) => {
+//     // res.send("Express on Vercel");
+//     res.sendFile('index.html');
+// })
 
 app.listen(port, () => console.log(`Server started on port ${port}`));
