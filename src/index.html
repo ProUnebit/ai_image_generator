@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; manifest-src 'self'" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; manifest-src 'self'" /> -->
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/spinner.css" />
 
@@ -58,6 +58,7 @@
     <div class="spinner"></div>
 
     <script src="js/main.js" defer></script>
+    <add name="Content-Security-Policy" value="default-src 'self'" />
 </body>
 
 </html>
