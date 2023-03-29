@@ -14,6 +14,9 @@
     "ia_image_generator",
     "heroku"
   ],
+  "engines" : { 
+    "node" : "18.0.0"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
