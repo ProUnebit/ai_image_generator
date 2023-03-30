@@ -4,15 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve",
-    "build-dev": "webpack",
-    "build-prod": "webpack --node-env=production",
     "start-node": "node src/index",
     "dev": "nodemon src/index"
   },
   "keywords": [
-    "ia_image_generator",
-    "heroku"
+    "ia_image_generator"
   ],
   "engines" : { 
     "node" : "18.0.0"

@@ -24,10 +24,10 @@ app.use(express.static(path.join(__dirname, './')));
 
 app.use('/openai', require('./routes/openaiRoutes'));
 
-router.get("/", (req, res) => {
-    res.render("index");
-});
-app.use("/", router);
+// router.get("/", (req, res) => {
+//     res.render("index");
+// });
+// app.use("/", router);
      
 
 // fs.readFile('./index.html');
