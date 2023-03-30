@@ -17,6 +17,7 @@ function onSubmit(e) {
 }
 
 async function generateImageRequest(prompt, size) {
+
     try {
         showSpinner();
 
