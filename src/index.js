@@ -7,9 +7,9 @@
 
 const path = require('path');
 const express = require('express');
-const fs = require('fs');
+// const fs = require('fs');
 const dotenv = require('dotenv').config();
-const router = express.Router();
+// const router = express.Router();
 
 const port = process.env.PORT || 5000;
 
